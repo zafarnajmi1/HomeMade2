@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ProductDetailDropDownCell" rowHeight="97" id="KGk-i7-Jjw" customClass="ProductDetailDropDownCell" customModule="HomeMade2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="97"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="96.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" background="textfield_dd_bg" translatesAutoresizingMaskIntoConstraints="NO" id="lYI-pl-uNy">
+                        <rect key="frame" x="20" y="40.5" width="280" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="WPP-1R-nyP"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Saz-lm-1VL">
+                        <rect key="frame" x="20" y="10" width="42" height="25.5"/>
+                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bSN-LS-lcr">
+                        <rect key="frame" x="31" y="90.5" width="258" height="1"/>
+                        <color key="backgroundColor" red="0.8236392495" green="0.83392646619999999" blue="0.84209996279999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="j7R-SA-PXQ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="lYI-pl-uNy" secondAttribute="trailing" constant="20" id="1oc-lo-pR4"/>
+                    <constraint firstItem="bSN-LS-lcr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="15" id="8jf-xG-MeD"/>
+                    <constraint firstItem="lYI-pl-uNy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="B9G-0R-oUJ"/>
+                    <constraint firstItem="Saz-lm-1VL" firstAttribute="leading" secondItem="lYI-pl-uNy" secondAttribute="leading" id="F83-d8-Lax"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="bSN-LS-lcr" secondAttribute="trailing" constant="15" id="TSW-Co-uLO"/>
+                    <constraint firstItem="bSN-LS-lcr" firstAttribute="top" secondItem="lYI-pl-uNy" secondAttribute="bottom" constant="10" id="fB0-1y-gO8"/>
+                    <constraint firstItem="lYI-pl-uNy" firstAttribute="top" secondItem="Saz-lm-1VL" secondAttribute="bottom" constant="5" id="lxF-79-59r"/>
+                    <constraint firstAttribute="bottom" secondItem="bSN-LS-lcr" secondAttribute="bottom" constant="5" id="m7J-gN-Bbu"/>
+                    <constraint firstItem="Saz-lm-1VL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="z7s-p6-iSP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lbl_title" destination="Saz-lm-1VL" id="plc-G8-SgQ"/>
+                <outlet property="txt_input" destination="lYI-pl-uNy" id="eol-Sw-pcS"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="128.23660714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="textfield_dd_bg" width="62.5" height="40"/>
+    </resources>
+</document>

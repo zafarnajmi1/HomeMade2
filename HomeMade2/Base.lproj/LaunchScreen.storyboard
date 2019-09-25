@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pS2-Pe-wRM">
+    <device id="retina6_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="giH-8Q-AZV">
+            <objects>
+                <viewController storyboardIdentifier="SplashVC" id="pS2-Pe-wRM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eCC-NF-SfQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="l_top" translatesAutoresizingMaskIntoConstraints="NO" id="9Ww-7s-3le">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="258.66666666666669"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="9Ww-7s-3le" secondAttribute="height" multiplier="1.6" id="rcO-o7-BAm"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="l_food" translatesAutoresizingMaskIntoConstraints="NO" id="iQA-jN-MQX">
+                                <rect key="frame" x="0.0" y="616.33333333333337" width="414" height="279.66666666666663"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="iQA-jN-MQX" secondAttribute="height" multiplier="1.48" id="Wxx-ZV-eIb"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2w4-xI-nre">
+                                <rect key="frame" x="0.0" y="258.66666666666669" width="414" height="5"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.63137254899999995" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="5" id="Xef-Wt-dat"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="IuD-0c-puF">
+                                <rect key="frame" x="107" y="378" width="200" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="GOo-c2-bR0"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iQA-jN-MQX" firstAttribute="trailing" secondItem="PhL-bd-4Nj" secondAttribute="trailing" id="4lB-vf-Frr"/>
+                            <constraint firstItem="PhL-bd-4Nj" firstAttribute="trailing" secondItem="9Ww-7s-3le" secondAttribute="trailing" id="Bwc-kZ-I5i"/>
+                            <constraint firstItem="9Ww-7s-3le" firstAttribute="top" secondItem="eCC-NF-SfQ" secondAttribute="top" id="LmU-te-ld7"/>
+                            <constraint firstItem="IuD-0c-puF" firstAttribute="centerY" secondItem="eCC-NF-SfQ" secondAttribute="centerY" priority="750" id="VCv-bW-ca4"/>
+                            <constraint firstItem="9Ww-7s-3le" firstAttribute="leading" secondItem="PhL-bd-4Nj" secondAttribute="leading" id="ZGm-Rg-Yc9"/>
+                            <constraint firstItem="IuD-0c-puF" firstAttribute="centerX" secondItem="eCC-NF-SfQ" secondAttribute="centerX" id="bSL-SH-rdR"/>
+                            <constraint firstItem="2w4-xI-nre" firstAttribute="top" secondItem="9Ww-7s-3le" secondAttribute="bottom" id="d3w-2K-f1K"/>
+                            <constraint firstItem="2w4-xI-nre" firstAttribute="leading" secondItem="PhL-bd-4Nj" secondAttribute="leading" id="dhn-0A-39I"/>
+                            <constraint firstItem="IuD-0c-puF" firstAttribute="top" relation="greaterThanOrEqual" secondItem="2w4-xI-nre" secondAttribute="bottom" id="gZJ-9M-Le6"/>
+                            <constraint firstItem="iQA-jN-MQX" firstAttribute="leading" secondItem="PhL-bd-4Nj" secondAttribute="leading" id="jvA-up-i07"/>
+                            <constraint firstItem="PhL-bd-4Nj" firstAttribute="trailing" secondItem="2w4-xI-nre" secondAttribute="trailing" id="py5-fw-jZp"/>
+                            <constraint firstAttribute="bottom" secondItem="iQA-jN-MQX" secondAttribute="bottom" id="wzH-H5-N50"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PhL-bd-4Nj"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="WmX-Wm-zDm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K8s-TO-C7F" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1270" y="-500"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="l_food" width="360" height="242.66667175292969"/>
+        <image name="l_top" width="804" height="500"/>
+        <image name="logo" width="200" height="140"/>
+    </resources>
+</document>
